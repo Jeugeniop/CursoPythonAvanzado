@@ -1,0 +1,46 @@
+Para implementar el tipado estático en python se indica el tipo de dato
+que será la variable en cuestion, por ejemplo: 
+
+    a: int = 5
+    b: str = "Hola"
+    c: bool = True
+
+Solo funciona en Python 3.
+
+También se aplica en las funciones: 
+
+    def sum(a: int, b: int) -> int: 
+        return a + b
+
+Para indicar el tipo de dato que retorna se utiliza la flecha -> y el tipo de dato a retornar
+
+Para trabajar tipado con estructuras de datos es necesario importar el siguiente módulo:
+
+from typing import Dict, List
+
+positives: List[int] = [1,2,3,4,5]
+
+users: Dict[str, int] = {
+    'argentina': 1,
+    'méxico': 24,
+    'colombia': 45
+}
+
+countries: List[Dict{str, str}] = [{
+    'name','argentina',
+    'people','45000'
+}]
+
+Tipado para tuplas:
+
+from typing import Tuple
+numbers: Tuple[int, float, int] = (1, 0.5, 1)
+CoordinatesType = List[Dict{str,Tuple[int,int]}]
+
+coordinates: CoordinatesType = [
+    {
+        'coord1': (1,3)
+    }
+]
+
+Para que python funcione como un lenguaje de tipado estático tipo Java podemos importar el módulo mypy
