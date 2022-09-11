@@ -1,0 +1,15 @@
+Generador: Sugar Syntax de los iteradores
+Son funciones, no clases a diferencia de los iteradores.
+
+yield: es casi lo mismo que return, solo que en lugar de terminar a la función
+pausa a la función en el punto donde está el yield, si se vuelve a llamar a la 
+función, comenzará desde donde estaba el yield.
+
+El generador debe ser instanciado.
+
+Generator expression
+
+my_list = [0,1,4,7,9,10]
+
+my_second_list = [x*2 for x in my_list] #List comprehension
+mt_second_gen = (x*2 for x in my_list) #Generator expression

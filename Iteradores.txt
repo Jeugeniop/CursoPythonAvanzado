@@ -1,0 +1,13 @@
+Iterables: todos los objetos que podemos recorrer en un ciclo por ejemplo 
+las listas, los caracteres, etc. Son divisibles en elementos únicos.
+
+La función iter() convierte una estructura de datos en un iterador.
+Con la función next() se puede obtener el siguiente elemento del iterador.
+Cuando ya no hay elementos, se obtiene el error stop iteration.
+
+Ventajas de usar iteradores: 
+    - permite ahorrar recursos
+    - ocupan poca memoria, se tiene una función que permite generar los 
+    números de una progresión sin tener que guardarlos.
+
+    

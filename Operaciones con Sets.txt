@@ -1,0 +1,11 @@
+Union: Resultado de combinar todos los elementos de ambos.
+my_set3 = my_set1 | my_set2
+
+Intersección: combinar los sets pero solo tomar los elementos en comun.
+my_set3 = my_set1 & my_set2
+
+Diferencia: tomar dos sets, y de uno quitar los elementos que tiene el otro.
+my_set3 = my_set1 - my_set2
+
+Diferencia simétrica: quedarse con los elementos de ambos sets sin los que se comparten.
+my_set3 ^ my_set2

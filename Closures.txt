@@ -1,0 +1,32 @@
+Nested Functions: son funciones que están creadas dentro de otra función.
+
+Se puede retornar funciones y asignarlas a una variable para poder ejecutarla
+posteriormente.
+
+Closure: es cuando una variable que está en un scope superior es recordada por
+una función que está en un scope superior, aunque este sea eliminado después.
+
+Ejemplo: 
+
+def main():
+    a = 1
+    def nested():
+        print(a)
+    return nested
+
+my_func = main()
+my_func()
+del(main)
+my_func()
+
+El resultado será que se imprimirá dos veces el valor de a (1)
+
+Reglas para encontrar un closure.
+    - Debemos tener una nested Functions
+    - La nested function debe referenciar un valor de un scope superior.
+    - La función que envuelve la nested function debe retornarla también.
+
+¿Dónde aparecen los closures?
+    - Cuando tenga clases con un solo método.
+    - Con decoradores.
+    

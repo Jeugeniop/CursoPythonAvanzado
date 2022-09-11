@@ -1,0 +1,31 @@
+Sets (o conjuntos): colección desordenada de elementos únicos e inmutables
+
+my_set = {item1,item2,.....,itemN}
+
+para crear un empty set es necesario usar la función set()
+emtpty_set = set()
+
+Si se define un set con elementos duplicados, python elimina los duplicados y 
+nos deja con un conjunto de elementos únicos.
+
+Se pueden convertir listas en sets, si se tienen duplicados los elimina.
+Lo mismo aplica para tuplas.
+
+Añadir elementos a un set: 
+Para esto es necesario utilizar el elemento my_set.add()
+Para añadir múltiples elementos my_set.update([el1,el2,..,eln])
+Si ya existe algún elemento en el set, este es ignorado
+
+También se pueden pasar estructuras de datos como tuplas o listas.
+
+Borrar elementos de un set: 
+my_set.discard(elemento)
+my_set.remove(elemento)
+my_set.discard(elementoNoExiste): deja el set igual
+my_set.remove(elementoNoExiste): marca error 
+
+Borrar elemento aleatoriamente
+my_set.pop()
+
+Limpiar el set:
+my_set.clear()

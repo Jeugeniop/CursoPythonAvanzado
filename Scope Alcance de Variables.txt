@@ -1,0 +1,4 @@
+Local scope: región que corresponde al ámbito de una función en donde viven
+una o más variables.
+
+Global scope: variables que tienen alcance en todo nuestro programa.

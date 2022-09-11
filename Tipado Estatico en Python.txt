@@ -44,3 +44,6 @@ coordinates: CoordinatesType = [
 ]
 
 Para que python funcione como un lenguaje de tipado estático tipo Java podemos importar el módulo mypy
+
+Ejecución de programa utiliando mypy con validación de tipado:
+    - mypy palindrome.py --check-untyped-defs

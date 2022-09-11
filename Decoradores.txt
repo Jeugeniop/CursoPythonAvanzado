@@ -1,0 +1,7 @@
+Decorador: función que recibe como parámetro otra función, le añade cosas 
+y la ejecuta, y retorna una función diferente.
+
+Azúcar sintáctica: código embellecido para que sea más fácilmente entendible.
+
+Para añadir Azúcar sintáctica a los decoradores: 
+se agrega un @decorador antes de la definición de la función
